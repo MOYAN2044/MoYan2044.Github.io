@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <!-- 关键：微信/QQ抓取的缩略图（A图）-->
-    <meta property="og:image" content="https://picsum.photos/id/104/800/600">
-    <!-- 让分享卡片更美观的辅助信息 -->
+    <title>点开查看图片</title>
+    <!-- 以下是微信卡片缩略图的关键 -->
     <meta property="og:title" content="点击查看完整图片">
-    <meta property="og:description" content="缩略图为A图，点开后为B图">
+    <meta property="og:description" content="这是一张精美的图片">
+    <meta property="og:image" content="https://picsum.photos/id/104/800/600">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
     <meta property="og:type" content="website">
-    <title>点开查看B图</title>
 </head>
 <body>
-    <!-- 点击页面后显示的内容（B图）-->
-    <img src="https://picsum.photos/id/15/1920/1080" style="display:block; max-width:100%; margin: 0 auto;">
+    <!-- 点开后页面里显示的内容（B图） -->
+    <img src="https://picsum.photos/id/15/1920/1080" style="display:block; max-width:100%; margin:0 auto;">
 </body>
 </html>
